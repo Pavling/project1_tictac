@@ -1,0 +1,16 @@
+<%= @user.first_name %>
+
+<h2>Scores</h2>
+<ul>
+<% @user.scores.order("value DESC").each do |score| %>
+  <li><%= score.game.name %>: <%= score.value %></li>
+<% end %>
+</ul>
+
+
+<h1>High scores!</h1>
+<ul>
+<% @scores.each do |score| %>
+  <li><%= score.user.first_name %> got <%= score.value %> in <%= score.game.name %></li>
+<% end %>
+</ul>

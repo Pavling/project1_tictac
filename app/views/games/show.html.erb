@@ -1,0 +1,22 @@
+<p>
+  <h2 class="center">TIC TAC TOE MOTHERF*CKER!!!!!</h2>
+
+<div class="grid">
+<% @game.moves_made_array.each_with_index do |square, index| %>
+<div class="boxes">
+
+<%# index %>
+<%= square %>
+<% if square.blank? %>
+  <%= button_to "Move here!!!", make_move_game_path(@game, square: index ) %>
+<% end %>
+</div>
+<% end %>
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.button {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: white;
+    border: 2px solid red;
+    color: red;
+    text-align: center;
+    font: bold 3.2em/100px  "Arial Black", "Arial Bold", Gadget, sans-serif;
+     opacity: 0.70;
+     background: linear-gradient(top, #34696f, #2f5f63);
+    border-radius: 50px;
+    box-shadow: 0 8px 0 #1b383b;
+    text-shadow: 0 2px 2px white;
+}
+
+h1{
+  font-weight:200;
+  font-size: 150px;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;;
+  line-height: 1;
+  color: red;
+  text-shadow: -1px 0 white, 0 1px white, 4px 0 white, 0 4px white;
+  text-decoration: none;
+}
+
+h2, .alert {
+  font-weight:200;
+  font-size: 50px;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;;
+  line-height: 1;
+  color: red;
+  text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 2px white;
+  text-decoration: none;
+
+}
+
+h2.center {
+  font-weight:200;
+  font-size: 50px;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;;
+  line-height: 1;
+  color: red;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 2px white;
+  text-decoration: none;
+}
+
+div.grid {
+  width:800px;
+  left:50px;
+  margin: auto auto;
+}
+
+div.boxes {
+  width:200px;
+  height: 200px;
+  float: left;
+  border-style:outset;
+  border-color:red;
+  border-width:10px;
+  background: white;
+  font-size: 200px;
+  text-align: center;
+  line-height: 1;
+  opacity: 0.99;
+}
+
+  div.boxes input {
+    background: black;
+    color: white;
+    display: block;
+    height: 190px;
+    width: 190px;
+    margin: 3px;
+    opacity: 0.4;
+    font-size: 30px;
+  }
+
+.game-item{
+  padding:0.5em;
+  background: white;
+  opacity: 0.9;
+  border: 2px solid red;
+  margin: 0.5em;
+}
+
+div.usertable{
+  width:200px;
+  height: 100px;
+  float: left;
+  border-style:outset;
+  border-color:red;
+  border-width:10px;
+  background: white;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+div.highscore {
+  width:200px;
+  height: 20px;
+  float: left;
+  position:relative;
+  top:50px;
+  border-style:outset;
+  border-color:red;
+  border-width:10px;
+  background: white;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  line-height: 1;
+  opacity: 0.99;
+}
+
+body {
+    background: image-url('king-kong-roar.jpg');
+    background-size: 120%;
+}
+
+
+
+

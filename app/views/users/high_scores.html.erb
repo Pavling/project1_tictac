@@ -1,0 +1,8 @@
+<h1>High scores!!!</h1>
+
+<% @scores.each do |score| %>
+<div class="highscore"
+ <p><%= "#{score.user.first_name} #{score.user.last_name}" %>: <%= score.value %></p>
+</div>
+<% end %>
+

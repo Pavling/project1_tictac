@@ -1,0 +1,19 @@
+<% @users.each do |user| %>
+ <div class ="usertable">
+ <p><%= "#{user.first_name} #{user.last_name} " %></p>
+ <table>
+  <tr>
+    <th>wins</th>
+    <th>losses</th>
+    <th>draws</th>
+    <th>score</th>
+  </tr>
+  <tr>
+    <td><%= user.scores.select{ |s| s.result == "win" }.length%></td>
+    <td><%= user.scores.select{ |s| s.result == "lose" }.length%></td>
+    <td><%= user.scores.select{ |s| s.result == "draw" }.length%></td>
+    <td><%= user.scores.map{ |s| s.value }.inject(:+) %></td>
+  </tr>
+  </table>
+</div>
+<% end %>
